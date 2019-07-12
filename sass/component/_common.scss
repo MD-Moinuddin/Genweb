@@ -1,0 +1,39 @@
+body {
+	color: #fff;
+	background-color: #f3f3f5;
+
+	ul {
+
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		 
+		 &:hover {
+			text-decoration: none;
+			color: #fff;
+		 }
+	}
+}
+
+.center-bold-text {
+	padding: 3em 0;
+	h1 {
+		text-transform: uppercase;
+		font-size: 4em;
+
+		@media screen and (max-height: 450px) {
+			font-size: 2em;
+		}
+
+		span {
+			font-weight: 550;
+		}
+	}
+}
+

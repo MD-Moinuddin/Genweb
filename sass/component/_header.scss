@@ -1,0 +1,111 @@
+.hero-section {
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 620px;
+}	
+
+.nav-bar {
+	padding: 1em 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+// Side-bar style start
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 1em;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+
+	a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;	
+
+		&:hover {
+			color: #f1f1f1;
+		}
+	}
+
+	.closebtn {
+		position: absolute;
+		top: 24px;
+		right: 30px;
+		font-size: 36px;
+		margin-left: 50px;
+		color: #fff;
+	}
+}
+// Side-bar style end
+
+.nav-right-item {
+	padding-right: 1em;
+
+	li {
+		display: inline-block;
+	}
+
+	.my-dropdown-toggle {
+		&:after {
+			border-top: 0em solid;
+		}
+		
+	}
+
+	.my-dropdown-menu {
+		background-color: transparent;
+
+		a {
+			color: #fff;
+
+			&:hover {
+				background-color: #000;
+			}
+		}
+	}		
+}
+
+.menu-img {
+	cursor: pointer;
+	width: 2em;
+}
+
+.logo-img {
+	width: 10em;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+// hero-center-item start
+.hero-heading {
+	color: #fff;
+}
+
+.get-started-btn {
+	padding: .5em 1em;
+	font-size: 2em;
+	line-height: 1em;
+
+	&:hover {
+		background-color: #007bff;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+// hero-center-item End
