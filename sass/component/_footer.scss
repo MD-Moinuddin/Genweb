@@ -104,6 +104,8 @@
 
 		@media screen and (max-height: 450px) {
 			width: 0em;
+			border-bottom-width: 0;
+			display: none;
 		}
 	}
 }
