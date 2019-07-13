@@ -29,7 +29,7 @@ body {
 .center-bold-text {
 	padding: 2em 0;
 
-	@media screen and (max-height: 450px) {
+	@media screen and (min-width: 778px) {
 		padding: 0;
 	}
 
@@ -37,7 +37,7 @@ body {
 		text-transform: uppercase;
 		font-size: 4em;
 
-		@media screen and (max-height: 450px) {
+		@media screen and (min-width: 778px) {
 			font-size: 1.5em;
 		}
 

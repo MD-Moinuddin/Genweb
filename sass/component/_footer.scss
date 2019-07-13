@@ -8,7 +8,7 @@
 		.upper-footer {
 			padding: 0 3em 5em 6em;
 
-			@media screen and (max-height: 450px) {
+			@media screen and (min-width: 750px) {
 				padding: 0;
 			}
 		}
@@ -23,7 +23,7 @@
 				top: 0;
 				right: 16em;
 
-				@media screen and (max-height: 450px) {
+				@media screen and (min-width: 750px) {
 					border: 1px solid #1f1f1f;
 				}
 			}
@@ -41,17 +41,21 @@
 	.social-option {
 		text-align: center;
 
+		@media screen and (min-width: 750px) {
+			display: none;
+		}
+
 		li {
 			float: left;
 			display: inline-block;
-			width: 3em;
-			height: 3em;
+			width: 2em;
+			height: 2em;
 			background-color: #dc3545;
 			border-radius: 50%;
-			margin: 0 .4em;
+			margin: 0 .2em;
 
 			.social-icon {
-				margin: 1em;
+				margin: .5em;
 			}
 		}
 	}
@@ -60,7 +64,7 @@
 .input-part {
 	margin: 5.5em 0 0 0;
 
-	@media screen and (max-height: 450px) {
+	@media screen and (max-width: 750px) {
 		margin: 0;
 	}
 
@@ -80,7 +84,7 @@
 		right: 1.5em;
 		bottom: 1.5em;
 
-		@media screen and (max-height: 450px) {
+		@media screen and (max-width: 750px) {
 			right: 6.0em;
 			bottom: 7.9em;
 		}		
@@ -102,7 +106,7 @@
 		bottom: 7em;
 		margin-bottom: 2em;
 
-		@media screen and (max-height: 450px) {
+		@media screen and (min-width: 750px) {
 			width: 0em;
 			border-bottom-width: 0;
 			display: none;
