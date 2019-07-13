@@ -19,6 +19,10 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px; }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      top: 4em;
+      background-color: #000; } }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -35,6 +39,10 @@
     font-size: 36px;
     margin-left: 50px;
     color: #fff; }
+    @media screen and (max-height: 450px) {
+      .sidenav .closebtn {
+        top: -10px;
+        right: 10px; } }
 
 .nav-right-item {
   padding-right: 1em; }
@@ -75,7 +83,11 @@
     box-shadow: none; }
 
 .grid-part {
-  padding: 6em 0 0; }
+  margin-top: 6em;
+  margin-bottom: 1em; }
+  @media screen and (max-height: 450px) {
+    .grid-part {
+      margin-top: 2em; } }
 
 .my-figure-caption {
   color: #606060;
@@ -99,7 +111,7 @@ body {
       color: #fff; }
 
 .center-bold-text {
-  padding: 3em 0; }
+  padding: 2em 0; }
   .center-bold-text h1 {
     text-transform: uppercase;
     font-size: 4em; }
@@ -110,7 +122,8 @@ body {
       font-weight: 550; }
 
 .subscription-part {
-  padding: 0 0 4em; }
+  margin-top: 3em;
+  margin-bottom: 6em; }
 
 .subscribe-heading {
   color: #606060; }
@@ -134,7 +147,7 @@ body {
     left: .9em; }
     @media screen and (max-height: 450px) {
       .heading-text:after {
-        width: 23.5em; } }
+        width: 21.6em; } }
   .heading-text .free-text {
     font-weight: 550; }
   .heading-text .dollar-text {
@@ -145,16 +158,35 @@ body {
   color: #000;
   display: flex;
   line-height: 2.4; }
+  @media screen and (max-height: 450px) {
+    .details-text {
+      line-height: 3.0; } }
   .details-text ul {
     margin-bottom: 3em; }
     .details-text ul li {
-      color: #3d3d3d; }
+      color: #3d3d3d;
+      font-size: 1em; }
+      @media screen and (max-height: 450px) {
+        .details-text ul li {
+          font-size: .8em; } }
   .details-text .text {
     letter-spacing: 1.5; }
+    @media screen and (max-height: 450px) {
+      .details-text .text {
+        letter-spacing: 1; } }
+    .details-text .text .disable-color {
+      color: #a3a3a3; }
 
 .my-subscription-btn {
   width: 100%;
   padding: 1em 0;
   border-radius: none; }
+
+.footer-part {
+  background-color: #000; }
+  .footer-part .footer-container {
+    padding: 0 190px 0 120px; }
+  .footer-part ul {
+    padding-left: 0; }
 
 /*# sourceMappingURL=index.css.map */
