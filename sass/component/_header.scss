@@ -3,6 +3,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 620px;
+
+	@media screen and (max-height: 450px) {
+		height: 400px;
+	}
 }	
 
 .nav-bar {
@@ -21,11 +25,13 @@
 	left: 0;
 	overflow-x: hidden;
 	transition: 0.5s;
-	padding-top: 60px;
+	margin-top: 60px;
+	background-color: #000;
 
 	@media screen and (max-height: 450px) {
 		top: 4em;
 		background-color: #000;
+		margin-top: 0px;
 	}
 
 	a {
@@ -43,8 +49,8 @@
 
 	.closebtn {
 		position: absolute;
-		top: 24px;
-		right: 30px;
+		top: -22px;
+		right: 0px;
 		font-size: 36px;
 		margin-left: 50px;
 		color: #fff;
@@ -96,6 +102,10 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
+  .center-bold-mobile {
+  	margin-top: 5em;
+  }
 }
 
 
@@ -109,6 +119,10 @@
 	padding: .5em 1em;
 	font-size: 2em;
 	line-height: 1em;
+
+	@media screen and (max-height: 450px) {
+		font-size: 1em;
+	}
 
 	&:hover {
 		background-color: #007bff;

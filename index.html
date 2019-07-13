@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<header class="hero-section">
+	<header id="hero-section" class="hero-section">
 
 		<div class="container-fluid">
 			<nav class="nav-bar">
@@ -14,10 +14,10 @@
 				<div class="nav-left-item">
 					<div id="mySidenav" class="sidenav">
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-						<a href="#">About</a>
-						<a href="#">Services</a>
-						<a href="#">Clients</a>
-						<a href="#">Contact</a>
+						<a href="#hero-section">Header</a>
+						<a href="#grid-part">Grid-part</a>
+						<a href="#subscription-part">Subscription</a>
+						<a href="#footer">Footer</a>
 					</div>
 
 					<span onclick="openNav()">
@@ -27,7 +27,7 @@
 					<img class="logo-img ml-2" src="img/Logo.png" alt="">
 				</div>
 
-				<div class="d-none d-sm-block nav-right-item hidden-xs">
+				<div class="d-none d-sm-block nav-right-item">
 					<ul>
 						<li>
 							<a href="">
@@ -55,11 +55,19 @@
 					</ul>
 				</div>
 
+				<div class="d-block d-sm-none nav-right-item">
+					<ul class="mt-2">
+						<li>
+							<a href="#"><img class="login-icon mr-2" src="img/login-icon.png" alt=""></a> 
+						</li>
+					</ul>					
+				</div>
+
 			</nav>
 
 
 			<!-- hero text start-->
-			<div class="center-bold-text">
+			<div class="center-bold-text center-bold-mobile">
 				<h1 class="text-center hero-heading mt-3">Try Our Services <br> <span>Free for 7 days</span></h1>
 			</div>
 
@@ -74,7 +82,7 @@
 	</header>
 
 	<!-- grid part start -->
-	<section class="container grid-part">
+	<section id="grid-part" class="container grid-part">
 		<div class="row">
 
 			<div class="col-md-4 col-sm-12">
@@ -104,7 +112,7 @@
 
 
 	<!-- Subscription part start -->
-	<section class="container subscription-part">
+	<section id="subscription-part" class="container subscription-part">
 		<div class="center-bold-text">
 			<h1 class="text-center subscribe-heading mt-3">Get Free or <br> <span>Get Subscribed.</span></h1>
 		</div>
@@ -162,35 +170,109 @@
 	</section>
 	<!-- Subscription part end -->
 
-	<footer class="footer-part">
+	<footer id="footer" class="footer-part">
 		<div class="footer-container">
-			<div class="row">
-				<div class="col-md-2">
-					<ul class="text-center">
-						<li>acv</li>
-						<li>abc</li>
-						<li>abc</li>
-						<li>abc</li>
-					</ul>
+			<div class="upper-footer">
+				<div class="row">
+
+					<div class="col-md-2">
+						<ul class="text-left mt-3">
+							<h5 class="header-text">GENWEB2</h5>
+							<li><a href="">Home</a></li>
+							<li><a href="">Games</a></li>
+							<li><a href="">Pricing</a></li>
+							<li><a href="">FAQ</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2">
+						<ul class="text-left mt-3 footer-list-border">
+							<h5 class="header-text">COMPANY</h5>
+							<li><a href="">About</a></li>
+							<li><a href="">Investor</a></li>
+							<li><a href="">Press</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
+					</div>
+
+					<div class="offset-md-1 col-md-2">
+						<ul class="text-left mt-3 footer-list-border">
+							<h5 class="header-text">MORE</h5>
+							<li><a href="">Jobs</a></li>
+							<li><a href="">Privacy policy</a></li>
+							<li><a href="">Terms and condition</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-5 d-none d-sm-block">
+						<div class="row">
+
+							<div class="col-md-5">
+
+								<div class="social-part">
+									<ul class="social-option">
+										<li>
+											<a href="#">
+												<img class="social-icon" src="img/facebook.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img class="social-icon" src="img/tweeter.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img class="social-icon" src="img/instagram.png" alt="">
+											</a>
+										</li>
+									</ul>							
+								</div>						
+							</div>				
+							
+							<div class="col-md-7">
+								<div class="input-part">
+									<ul>
+										<li>
+											<div class="form-group">
+												<label for="formGroupExampleInput">Be the first to know about</label>
+												<input type="text" class="form-control my-input-area" id="formGroupExampleInput" placeholder="Your Email">
+												<span class="arrow-icon"><img src="img/arrow.png" alt=""></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- input-box for mobile device -->
+						<div class="input-part d-block d-sm-none">
+							<ul>
+								<li>
+									<div class="form-group">
+										<input type="text" class="form-control my-input-area" id="formGroupExampleInput" placeholder="Your Email">
+										<span class="arrow-icon"><img src="img/arrow.png" alt=""></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					<!-- input-box for mobile device end-->
+
 				</div>
-				<div class="col-md-2">
-					<ul class="text-center">
-						<li>acv</li>
-						<li>abc</li>
-						<li>abc</li>
-						<li>abc</li>
-					</ul>
-				</div>
-				<div class="offset-md-1 col-md-2">
-					<ul class="text-center">
-						<li>acv</li>
-						<li>abc</li>
-						<li>abc</li>
-						<li>abc</li>
-					</ul>
-				</div>
-				<div class="col-md-5"></div>
 			</div>
+
+
+			<div class="copyright d-none d-sm-block">
+				<p>© 2019  Genweb2 Limited <br>All rights reserved</p>
+			</div>
+
+			<!-- for mobile copyright -->
+			<div class="copyright d-block d-sm-none">
+				<p>© 2019  Genweb2 Limited All rights reserved</p>
+			</div>
+			<!-- for mobile copyright end -->
 		</div>		
 	</footer>
 

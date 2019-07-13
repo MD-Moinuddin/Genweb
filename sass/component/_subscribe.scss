@@ -2,6 +2,11 @@
 	// padding: 0 0 4em 0;
 	margin-top: 3em;
 	margin-bottom: 6em;
+
+	@media screen and (max-height: 450px) {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}	
 }
 
 .subscribe-heading {
@@ -11,6 +16,10 @@
 .subscription-bg {
 	background-color: #ffffff;
 	padding: 2em 2.5em 1em;
+
+	@media screen and (max-height: 450px) {
+		padding: 1em 2em 1em;
+	}
 }
 
 .heading-text {
@@ -18,6 +27,10 @@
 	
 	h3 {
 		font-size: 1.5em;
+
+		@media screen and (max-height: 450px) {
+			font-size: 1.2em;
+		}
 	}
 
 	&:after {
@@ -31,7 +44,7 @@
 		left: .9em;
 
 		@media screen and (max-height: 450px) {
-			width: 21.6em;
+			width: 21.9em;
 		}
 	}
 
