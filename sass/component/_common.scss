@@ -29,17 +29,10 @@ body {
 .center-bold-text {
 	padding: 2em 0;
 
-	@media screen and (min-width: 778px) {
-		padding: 0;
-	}
-
 	h1 {
 		text-transform: uppercase;
 		font-size: 4em;
-
-		@media screen and (min-width: 778px) {
-			font-size: 1.5em;
-		}
+	    font-weight: normal;
 
 		span {
 			font-weight: 550;

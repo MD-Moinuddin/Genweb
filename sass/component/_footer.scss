@@ -7,10 +7,6 @@
 
 		.upper-footer {
 			padding: 0 3em 5em 6em;
-
-			@media screen and (min-width: 750px) {
-				padding: 0;
-			}
 		}
 
 		.footer-list-border {
@@ -22,10 +18,6 @@
 				border: 1px solid #2b2b2b;
 				top: 0;
 				right: 16em;
-
-				@media screen and (min-width: 750px) {
-					border: 1px solid #1f1f1f;
-				}
 			}
 		}
 	}
@@ -35,27 +27,36 @@
 	}	
 }
 
+@media only screen and (max-width: 768px) {
+	.footer-part {
+		.footer-container {
+			.footer-list-border {
+				&:after {
+					height: 0;
+				}
+			}
+		}
+	}
+}
+
 .social-part {
 	margin: 7em 0 0 0;
 
 	.social-option {
 		text-align: center;
-
-		@media screen and (min-width: 750px) {
-			display: none;
-		}
+		display: block;
 
 		li {
 			float: left;
 			display: inline-block;
-			width: 2em;
-			height: 2em;
+			width: 3em;
+			height: 3em;
 			background-color: #dc3545;
 			border-radius: 50%;
 			margin: 0 .2em;
 
 			.social-icon {
-				margin: .5em;
+				margin: 1em;
 			}
 		}
 	}
@@ -63,10 +64,6 @@
 
 .input-part {
 	margin: 5.5em 0 0 0;
-
-	@media screen and (max-width: 750px) {
-		margin: 0;
-	}
 
 	.my-input-area {
 		background-color: #c9c9c9;
@@ -82,35 +79,15 @@
 	.arrow-icon {
 		position: absolute;
 		right: 1.5em;
-		bottom: 1.5em;
-
-		@media screen and (max-width: 750px) {
-			right: 6.0em;
-			bottom: 7.9em;
-		}		
+		bottom: 1.5em;	
 	}
 }
 
 .copyright {
 	font-size: .8em;
-
-	&:after {
-		content: " ";
-		border-bottom-style: solid;
-		border-bottom-width: 2px;
-		display: table-cell;
-		width: 105em;
-		color: #2b2b2b;
-		position: absolute;
-		left: 6em;
-		bottom: 7em;
-		margin-bottom: 2em;
-
-		@media screen and (min-width: 750px) {
-			width: 0em;
-			border-bottom-width: 0;
-			display: none;
-		}
-	}
+	border-top: 1px solid #2b2b2b;
+	padding-bottom: 1em;
+	padding-top: 2em;
 }
+
 

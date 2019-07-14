@@ -2,10 +2,8 @@
   background-image: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 620px; }
-  @media screen and (min-width: 750px) {
-    .hero-section {
-      height: 400px; } }
+  height: 620px;
+  width: 100%; }
 
 .nav-bar {
   padding: 1em 0;
@@ -23,11 +21,6 @@
   transition: 0.5s;
   margin-top: 60px;
   background-color: #000; }
-  @media screen and (min-width: 750px) {
-    .sidenav {
-      top: 4em;
-      background-color: #000;
-      margin-top: 0px; } }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -44,10 +37,6 @@
     font-size: 36px;
     margin-left: 50px;
     color: #fff; }
-    @media screen and (min-width: 750px) {
-      .sidenav .closebtn {
-        top: -10px;
-        right: 10px; } }
 
 .nav-right-item {
   padding-right: 1em; }
@@ -74,10 +63,7 @@
     padding-top: 15px; }
 
   .sidenav a {
-    font-size: 18px; }
-
-  .center-bold-mobile {
-    margin-top: 5em; } }
+    font-size: 18px; } }
 .hero-heading {
   color: #fff; }
 
@@ -85,9 +71,6 @@
   padding: .5em 1em;
   font-size: 2em;
   line-height: 1em; }
-  @media screen and (min-width: 750px) {
-    .get-started-btn {
-      font-size: 1em; } }
   .get-started-btn:hover {
     background-color: #007bff; }
   .get-started-btn:focus {
@@ -96,20 +79,12 @@
 .grid-part {
   margin-top: 6em;
   margin-bottom: 1em; }
-  @media screen and (min-width: 750px) {
-    .grid-part {
-      margin-top: 2em; } }
 
 .my-figure-caption {
   color: #606060;
   font-size: 2em;
   line-height: 1.2;
   padding: 0 1.2em; }
-  @media screen and (min-width: 750px) {
-    .my-figure-caption {
-      font-size: 1em;
-      line-height: 1;
-      padding: 0 5.0em; } }
 
 .grid-img {
   height: 8em; }
@@ -131,25 +106,16 @@ body {
 
 .center-bold-text {
   padding: 2em 0; }
-  @media screen and (min-width: 778px) {
-    .center-bold-text {
-      padding: 0; } }
   .center-bold-text h1 {
     text-transform: uppercase;
-    font-size: 4em; }
-    @media screen and (min-width: 778px) {
-      .center-bold-text h1 {
-        font-size: 1.5em; } }
+    font-size: 4em;
+    font-weight: normal; }
     .center-bold-text h1 span {
       font-weight: 550; }
 
 .subscription-part {
   margin-top: 3em;
   margin-bottom: 6em; }
-  @media screen and (min-width: 750px) {
-    .subscription-part {
-      margin-top: 2em;
-      margin-bottom: 2em; } }
 
 .subscribe-heading {
   color: #606060; }
@@ -157,17 +123,11 @@ body {
 .subscription-bg {
   background-color: #ffffff;
   padding: 2em 2.5em 1em; }
-  @media screen and (min-width: 750px) {
-    .subscription-bg {
-      padding: 1em 2em 1em; } }
 
 .heading-text {
   color: #007bff; }
   .heading-text h3 {
     font-size: 1.5em; }
-    @media screen and (min-width: 750px) {
-      .heading-text h3 {
-        font-size: 1.2em; } }
   .heading-text:after {
     content: " ";
     border-bottom-style: solid;
@@ -177,35 +137,26 @@ body {
     color: #e5e5e5;
     position: absolute;
     left: .9em; }
-    @media screen and (min-width: 750px) {
-      .heading-text:after {
-        width: 20.8em; } }
   .heading-text .free-text {
     font-weight: 550; }
   .heading-text .dollar-text {
     font-weight: 600;
     font-size: 2em; }
 
+@media only screen and (min-width: 768px) {
+  .heading-text:after {
+    width: 20.8em; } }
 .details-text {
   color: #000;
   display: flex;
   line-height: 2.4; }
-  @media screen and (min-width: 750px) {
-    .details-text {
-      line-height: 3.0; } }
   .details-text ul {
     margin-bottom: 3em; }
     .details-text ul li {
       color: #3d3d3d;
       font-size: 1em; }
-      @media screen and (min-width: 750px) {
-        .details-text ul li {
-          font-size: .8em; } }
   .details-text .text {
     letter-spacing: 1.5; }
-    @media screen and (min-width: 750px) {
-      .details-text .text {
-        letter-spacing: 1; } }
     .details-text .text .disable-color {
       color: #a3a3a3; }
 
@@ -221,9 +172,6 @@ body {
     padding: 3em 6em 3em 5em; }
     .footer-part .footer-container .upper-footer {
       padding: 0 3em 5em 6em; }
-      @media screen and (min-width: 750px) {
-        .footer-part .footer-container .upper-footer {
-          padding: 0; } }
     .footer-part .footer-container .footer-list-border:after {
       content: '';
       width: 0;
@@ -232,35 +180,30 @@ body {
       border: 1px solid #2b2b2b;
       top: 0;
       right: 16em; }
-      @media screen and (min-width: 750px) {
-        .footer-part .footer-container .footer-list-border:after {
-          border: 1px solid #1f1f1f; } }
   .footer-part ul {
     padding-left: 0; }
 
+@media only screen and (max-width: 768px) {
+  .footer-part .footer-container .footer-list-border:after {
+    height: 0; } }
 .social-part {
   margin: 7em 0 0 0; }
   .social-part .social-option {
-    text-align: center; }
-    @media screen and (min-width: 750px) {
-      .social-part .social-option {
-        display: none; } }
+    text-align: center;
+    display: block; }
     .social-part .social-option li {
       float: left;
       display: inline-block;
-      width: 2em;
-      height: 2em;
+      width: 3em;
+      height: 3em;
       background-color: #dc3545;
       border-radius: 50%;
       margin: 0 .2em; }
       .social-part .social-option li .social-icon {
-        margin: .5em; }
+        margin: 1em; }
 
 .input-part {
   margin: 5.5em 0 0 0; }
-  @media screen and (max-width: 750px) {
-    .input-part {
-      margin: 0; } }
   .input-part .my-input-area {
     background-color: #c9c9c9;
     border-radius: 0;
@@ -272,28 +215,11 @@ body {
     position: absolute;
     right: 1.5em;
     bottom: 1.5em; }
-    @media screen and (max-width: 750px) {
-      .input-part .arrow-icon {
-        right: 6.0em;
-        bottom: 7.9em; } }
 
 .copyright {
-  font-size: .8em; }
-  .copyright:after {
-    content: " ";
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    display: table-cell;
-    width: 105em;
-    color: #2b2b2b;
-    position: absolute;
-    left: 6em;
-    bottom: 7em;
-    margin-bottom: 2em; }
-    @media screen and (min-width: 750px) {
-      .copyright:after {
-        width: 0em;
-        border-bottom-width: 0;
-        display: none; } }
+  font-size: .8em;
+  border-top: 1px solid #2b2b2b;
+  padding-bottom: 1em;
+  padding-top: 2em; }
 
 /*# sourceMappingURL=index.css.map */
