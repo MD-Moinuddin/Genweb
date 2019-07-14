@@ -15,21 +15,22 @@
 
 .heading-text {
 	color: #007bff;
+	border-bottom: 1px solid #e5e5e5;
 	
 	h3 {
 		font-size: 1.5em;
 	}
 
-	&:after {
-		content: " ";
-		border-bottom-style: solid;
-		border-bottom-width: 2px;
-		display: table-cell;
-		width: 34.8em;
-		color: #e5e5e5;
-		position: absolute;
-		left: .9em;
-	}
+	// &:after {
+	// 	content: " ";
+	// 	border-bottom-style: solid;
+	// 	border-bottom-width: 2px;
+	// 	display: table-cell;
+	// 	width: 34.8em;
+	// 	color: #e5e5e5;
+	// 	position: absolute;
+	// 	left: .9em;
+	// }
 
 	.free-text {
 		font-weight: 550;
@@ -41,13 +42,13 @@
 	} 
 }
 
-@media only screen and (min-width: 768px) {
-	.heading-text {
-		&:after {
-		    width: 20.8em;
-		}
-	}
-}
+// @media only screen and (min-width: 768px) {
+// 	.heading-text {
+// 		&:after {
+// 		    width: 20.8em;
+// 		}
+// 	}
+// }
 
 
 .details-text {
