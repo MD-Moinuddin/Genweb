@@ -185,7 +185,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .footer-part .footer-container .footer-list-border:after {
-    height: 0; } }
+    height: 0%; } }
 .social-part {
   margin: 7em 0 0 0; }
   .social-part .social-option {
