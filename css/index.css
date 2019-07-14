@@ -176,10 +176,10 @@ body {
   .footer-part .footer-container .footer-list-border:after {
     height: 0%; } }
 .social-part {
-  margin: 7em 0 0 0; }
+  margin: 7em 0 0 0;
+  display: block; }
   .social-part .social-option {
-    text-align: center;
-    display: block; }
+    text-align: center; }
     .social-part .social-option li {
       float: left;
       display: inline-block;
@@ -191,6 +191,9 @@ body {
       .social-part .social-option li .social-icon {
         margin: 1em; }
 
+@media only screen and (max-width: 768px) {
+  .social-part {
+    display: none; } }
 .input-part {
   margin: 5.5em 0 0 0; }
   .input-part .my-input-area {
