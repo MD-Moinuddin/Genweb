@@ -10,6 +10,18 @@
 	padding: 0 1.2em;
 }
 
+@media only screen and (min-width: 768px) {
+	.my-figure-caption {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.my-figure-caption {
+		font-size: 2em;
+	}
+}
+
 .grid-img {
 	height: 8em;
 }
