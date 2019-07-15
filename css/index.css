@@ -151,7 +151,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .heading-text:after {
-    width: 18.2em; } }
+    width: 0em; } }
 .details-text {
   color: #000;
   display: flex;
@@ -168,7 +168,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .details-text {
-    line-height: 1.22; }
+    line-height: 2.5; }
     .details-text .text {
       letter-spacing: 1; } }
 .my-subscription-btn {
@@ -197,6 +197,8 @@ body {
 @media only screen and (max-width: 768px) {
   .footer-part .footer-container {
     padding: 0 0 0 0; }
+    .footer-part .footer-container .upper-footer {
+      padding: 0 3em 5em 6em; }
     .footer-part .footer-container .footer-list-border:after {
       height: 0%; } }
 .social-part {

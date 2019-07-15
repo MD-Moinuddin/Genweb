@@ -33,6 +33,11 @@
 	.footer-part {
 		.footer-container {
 			padding: 0 0 0 0;
+
+			.upper-footer {
+				padding: 0 3em 5em 6em;
+			}
+			
 			.footer-list-border {
 				&:after {
 					height: 0%;
