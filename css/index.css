@@ -149,12 +149,12 @@ body {
     font-weight: 600;
     font-size: 2em; }
 
-@media only screen and (max-width: 768px) {
-  .heading-text:after {
-    width: 20.7em; } }
-@media only screen and (min-width: 425px) {
+@media only screen and (max-width: 425px) {
   .heading-text:after {
     width: 24.8em; } }
+@media only screen and (min-width: 768px) {
+  .heading-text:after {
+    width: 20.7em; } }
 .details-text {
   color: #000;
   display: flex;
