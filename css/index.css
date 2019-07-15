@@ -151,7 +151,10 @@ body {
 
 @media only screen and (max-width: 768px) {
   .heading-text:after {
-    width: 0em; } }
+    width: 20.7em; } }
+@media only screen and (min-width: 425px) {
+  .heading-text:after {
+    width: 24.8em; } }
 .details-text {
   color: #000;
   display: flex;
